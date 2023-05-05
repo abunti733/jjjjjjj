@@ -1,0 +1,92 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+}
+.container{
+	padding:30px;
+	background:#8a3f3f;
+}
+.container .logo{
+	padding:20px;
+	font-size:50px;
+	color:white;	
+}
+.container ul{
+	float:right;
+	margin-right:30px;
+}
+.container ul li{
+	display:inline-block;
+	line-height:80px;
+	margin:0 8px;
+}
+.container ul li a{
+	font-size:18px;
+	border-radius:3px;
+	border:1px solid transparent;
+	padding:8px 8px;
+	color:#decbcb;
+	border-radius:3px;
+}
+.container ul li a:hover{
+	border:1px solid white;
+}
+.container ul li > ul{
+	position:absolute;
+	background:#8a3f3f;
+	transform:scaleY(0);
+	transition:0.5s;
+	/* right:0; */
+	transform-origin:top;
+}
+.container ul li > ul li{
+	display:block;
+	padding:0;
+}
+
+.container ul li:hover > ul{
+	transform:scaleY(1);
+	
+}
+.rtc{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+}
+.rtc form{
+	text-align:center;
+	padding:20px 20px;
+	display:block;
+	height:auto;
+	width:40%;
+	box-shadow:0px 4px 15px rgba(0,0,0,0.3);
+}
+.rtc form h3{
+	color:crimson;
+}
+.rtc form input{
+	padding:7px;
+	margin:10px;
+	height:40px;
+	width:70%;
+	border-radius:25px;
+	background:#0363f426;
+	border:1px solid #ced4da;
+}
+.rtc form input:focus{
+	border-color:#86b7fe;
+	outline:none;
+}
+.rtc form .btn{
+	color:#fff;
+	height:50px;
+	font-size:18px;
+	background:crimson;
+}
+.rtc form a{
+	font-size:12px;
+	text-decoration:none;
+}
